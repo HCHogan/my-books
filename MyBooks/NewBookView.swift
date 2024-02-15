@@ -7,10 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import Inject
 
 struct NewBookView: View {
     @Environment (\.dismiss) var dismiss
     @Environment(\.modelContext) private var context
+
+    @ObservedObject var inject = Inject.observer
     
     @State private var title = ""
     @State private var author = ""
@@ -40,6 +43,7 @@ struct NewBookView: View {
                 }
             }
         }
+        .enableInjection()
     }
 }
 

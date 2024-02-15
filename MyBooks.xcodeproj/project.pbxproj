@@ -11,6 +11,9 @@
 		3608D4952B7CD9E3004A338D /* NewBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D4942B7CD9E3004A338D /* NewBookView.swift */; };
 		3608D4972B7CE812004A338D /* EditBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D4962B7CE812004A338D /* EditBookView.swift */; };
 		3608D4992B7CF9D1004A338D /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D4982B7CF9D1004A338D /* RatingsView.swift */; };
+		3608D49C2B7D0EF5004A338D /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = 3608D49B2B7D0EF5004A338D /* Inject */; };
+		3608D49E2B7DE234004A338D /* BookSamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D49D2B7DE234004A338D /* BookSamples.swift */; };
+		3608D4A02B7DE3FB004A338D /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3608D49F2B7DE3FB004A338D /* PreviewContainer.swift */; };
 		368E8C092B7CB5D700E54DD6 /* MyBooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368E8C082B7CB5D700E54DD6 /* MyBooksApp.swift */; };
 		368E8C0B2B7CB5D700E54DD6 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368E8C0A2B7CB5D700E54DD6 /* BookListView.swift */; };
 		368E8C0D2B7CB5D800E54DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368E8C0C2B7CB5D800E54DD6 /* Assets.xcassets */; };
@@ -42,6 +45,8 @@
 		3608D4942B7CD9E3004A338D /* NewBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewBookView.swift; sourceTree = "<group>"; };
 		3608D4962B7CE812004A338D /* EditBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBookView.swift; sourceTree = "<group>"; };
 		3608D4982B7CF9D1004A338D /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
+		3608D49D2B7DE234004A338D /* BookSamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSamples.swift; sourceTree = "<group>"; };
+		3608D49F2B7DE3FB004A338D /* PreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewContainer.swift; sourceTree = "<group>"; };
 		368E8C052B7CB5D700E54DD6 /* MyBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368E8C082B7CB5D700E54DD6 /* MyBooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksApp.swift; sourceTree = "<group>"; };
 		368E8C0A2B7CB5D700E54DD6 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3608D49C2B7D0EF5004A338D /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				368E8C102B7CB5D800E54DD6 /* Preview Assets.xcassets */,
+				3608D49D2B7DE234004A338D /* BookSamples.swift */,
+				3608D49F2B7DE3FB004A338D /* PreviewContainer.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -157,6 +165,9 @@
 			dependencies = (
 			);
 			name = MyBooks;
+			packageProductDependencies = (
+				3608D49B2B7D0EF5004A338D /* Inject */,
+			);
 			productName = MyBooks;
 			productReference = 368E8C052B7CB5D700E54DD6 /* MyBooks.app */;
 			productType = "com.apple.product-type.application";
@@ -229,6 +240,9 @@
 				Base,
 			);
 			mainGroup = 368E8BFC2B7CB5D700E54DD6;
+			packageReferences = (
+				3608D49A2B7D0EF4004A338D /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = 368E8C062B7CB5D700E54DD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -271,11 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3608D49E2B7DE234004A338D /* BookSamples.swift in Sources */,
 				3608D4952B7CD9E3004A338D /* NewBookView.swift in Sources */,
 				3608D4972B7CE812004A338D /* EditBookView.swift in Sources */,
 				368E8C0B2B7CB5D700E54DD6 /* BookListView.swift in Sources */,
 				3608D4992B7CF9D1004A338D /* RatingsView.swift in Sources */,
 				368E8C092B7CB5D700E54DD6 /* MyBooksApp.swift in Sources */,
+				3608D4A02B7DE3FB004A338D /* PreviewContainer.swift in Sources */,
 				3608D4932B7CBA46004A338D /* Book.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +471,10 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kernelize.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -493,6 +513,10 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Kernelize.MyBooks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -633,6 +657,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3608D49A2B7D0EF4004A338D /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3608D49B2B7D0EF5004A338D /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3608D49A2B7D0EF4004A338D /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 368E8BFD2B7CB5D700E54DD6 /* Project object */;
 }

@@ -23,8 +23,8 @@ class Book {
         title: String,
         author: String,
         dateAdded: Date = Date.now,
-        dataStarted: Date = Date.distantPast,
-        dataCompleted: Date = Date.distantPast,
+        dateStarted: Date = Date.distantPast,
+        dateCompleted: Date = Date.distantPast,
         summary: String = "",
         rating: Int? = nil,
         status: Status = .onShelf
@@ -32,8 +32,8 @@ class Book {
         self.title = title
         self.author = author
         self.dateAdded = dateAdded
-        self.dateStarted = dataStarted
-        self.dateCompleted = dataCompleted
+        self.dateStarted = dateStarted
+        self.dateCompleted = dateCompleted
         self.summary = summary
         self.rating = rating
         self.status = status

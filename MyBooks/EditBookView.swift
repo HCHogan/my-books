@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import Inject
 
 struct EditBookView: View {
+    @ObservedObject var inject = Inject.observer
+    
     @Environment(\.dismiss) private var dismiss
     
     @State private var status = Status.onShelf
@@ -33,6 +36,7 @@ struct EditBookView: View {
             .buttonStyle(.bordered)
         }
         VStack(alignment: .leading) {
+            Text("Bitch")
             GroupBox {
                 LabeledContent {
                     DatePicker("", selection: $dateAdded, displayedComponents: .date)
@@ -128,6 +132,7 @@ struct EditBookView: View {
             dateStarted = book.dateStarted
             dateCompleted = book.dateCompleted
         }
+        .enableInjection()
     }
     
     var changed: Bool {
@@ -142,8 +147,10 @@ struct EditBookView: View {
     }
 }
 
-//#Preview {
-//    NavigationStack {
-//        EditBookView()
-//    }
-//}
+#Preview {
+    let preview = Preview(Book.self)
+    return NavigationStack {
+        EditBookView(book: Book.sampleBooks[4])
+            .modelContainer(preview.container)
+    }
+}

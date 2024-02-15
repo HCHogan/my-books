@@ -1,0 +1,57 @@
+/Users/hank/Library/Developer/CoreSimulator/Devices/0AB08769-9B5E-42F4-AEF1-2EEC2C9BAD28/data/Containers/Data/Application/84D0D626-13FC-4A53-AD0D-60D0EC4DDC1C/Documents/
+💉 InjectionIII connected /Users/hank/Lab/MyBooks/MyBooks.xcodeproj
+💉 Watching files under the directory /Users/hank/Lab/MyBooks
+💉 Compiling /Users/hank/Lab/MyBooks/MyBooks/MyBooksApp.swift
+💉 Loading .dylib ...
+💉 Interposed 3 function references.
+💉 Injected type #1 'MyBooks.MyBooksApp'
+💉 ⚠️ Could not locate compile command for "/Users/hank/Lab/MyBooks/MyBooks/Preview Content/BookSamples.swift" in /Users/hank/Library/Developer/Xcode/DerivedData/MyBooks-atjqqtlfdmubzgchewtaejddqdee/Logs/Build/.
+This could be due to one of the following:
+1. Injection does not work with Whole Module Optimization.
+2. There are restrictions on characters allowed in paths.
+3. File paths in the simulator are case sensitive.
+4. The modified source file is not in the current project.
+5. The source file is an XCTest that has not been run yet.
+6. Xcode has removed the build logs. Edit a file and re-run.
+Try a build clean then rebuild to make logs available or
+consult: "/Users/hank/Library/Containers/com.johnholdsworth.InjectionIII/Data/tmp/command.sh".
+💉 ⚠️ Could not locate compile command for "/Users/hank/Lab/MyBooks/MyBooks/Preview Content/BookSamples.swift" in /Users/hank/Library/Developer/Xcode/DerivedData/MyBooks-atjqqtlfdmubzgchewtaejddqdee/Logs/Build/.
+This could be due to one of the following:
+1. Injection does not work with Whole Module Optimization.
+2. There are restrictions on characters allowed in paths.
+3. File paths in the simulator are case sensitive.
+4. The modified source file is not in the current project.
+5. The source file is an XCTest that has not been run yet.
+6. Xcode has removed the build logs. Edit a file and re-run.
+Try a build clean then rebuild to make logs available or
+consult: "/Users/hank/Library/Containers/com.johnholdsworth.InjectionIII/Data/tmp/command.sh".
+💉 ⚠️ Could not locate compile command for "/Users/hank/Lab/MyBooks/MyBooks/Preview Content/BookSamples.swift" in /Users/hank/Library/Developer/Xcode/DerivedData/MyBooks-atjqqtlfdmubzgchewtaejddqdee/Logs/Build/.
+This could be due to one of the following:
+1. Injection does not work with Whole Module Optimization.
+2. There are restrictions on characters allowed in paths.
+3. File paths in the simulator are case sensitive.
+4. The modified source file is not in the current project.
+5. The source file is an XCTest that has not been run yet.
+6. Xcode has removed the build logs. Edit a file and re-run.
+Try a build clean then rebuild to make logs available or
+consult: "/Users/hank/Library/Containers/com.johnholdsworth.InjectionIII/Data/tmp/command.sh".
+💉 ⚠️ Could not locate compile command for "/Users/hank/Lab/MyBooks/MyBooks/Preview Content/BookSamples.swift" in /Users/hank/Library/Developer/Xcode/DerivedData/MyBooks-atjqqtlfdmubzgchewtaejddqdee/Logs/Build/.
+This could be due to one of the following:
+1. Injection does not work with Whole Module Optimization.
+2. There are restrictions on characters allowed in paths.
+3. File paths in the simulator are case sensitive.
+4. The modified source file is not in the current project.
+5. The source file is an XCTest that has not been run yet.
+6. Xcode has removed the build logs. Edit a file and re-run.
+Try a build clean then rebuild to make logs available or
+consult: "/Users/hank/Library/Containers/com.johnholdsworth.InjectionIII/Data/tmp/command.sh".
+💉 ⚠️ Could not locate compile command for "/Users/hank/Lab/MyBooks/MyBooks/Preview Content/BookSamples.swift" in /Users/hank/Library/Developer/Xcode/DerivedData/MyBooks-atjqqtlfdmubzgchewtaejddqdee/Logs/Build/.
+This could be due to one of the following:
+1. Injection does not work with Whole Module Optimization.
+2. There are restrictions on characters allowed in paths.
+3. File paths in the simulator are case sensitive.
+4. The modified source file is not in the current project.
+5. The source file is an XCTest that has not been run yet.
+6. Xcode has removed the build logs. Edit a file and re-run.
+Try a build clean then rebuild to make logs available or
+consult: "/Users/hank/Library/Containers/com.johnholdsworth.InjectionIII/Data/tmp/command.sh".

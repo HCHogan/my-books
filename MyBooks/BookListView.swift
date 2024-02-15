@@ -7,8 +7,10 @@
 
 import SwiftUI
 import SwiftData
+import Inject
 
 struct BookListView: View {
+    @ObservedObject var inject = Inject.observer
     @Environment(\.modelContext) private var context
     @Query(sort: \Book.title) private var books: [Book]
     @State private var createNewBook = false
@@ -31,7 +33,7 @@ struct BookListView: View {
                                         Text(book.author).foregroundStyle(.secondary)
                                         if let rating = book.rating {
                                             HStack {
-                                                ForEach(0..<rating, id: \.self) { _ in
+                                                ForEach(1..<rating, id: \.self) { _ in
                                                     Image(systemName: "star.fill").imageScale(.small)
                                                         .foregroundStyle(.yellow)
                                                 }
@@ -65,10 +67,13 @@ struct BookListView: View {
                         .presentationDetents([.medium])
                 }
         }
+        .enableInjection()
     }
 }
 
 #Preview {
-    BookListView()
-        .modelContainer(for: Book.self, inMemory: true)
+    let preview = Preview(Book.self)
+    preview.addExamples(Book.sampleBooks)
+    return BookListView()
+        .modelContainer(preview.container)
 }
